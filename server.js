@@ -1,4 +1,4 @@
-var PORT = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -37,6 +37,6 @@ app.get('/', (req, res) => {
 require('./app/routes/note.routes.js')(app);
 
 // listen for requests
-app.listen(PORT, () => {
+app.listen(port, () => {
     console.log("Server is listening on port 3000");
 });
